@@ -1,1 +1,8 @@
 /*Maak hier jouw CSS!*/
+/*kleuren toewijzen aan cointainer*/
+body{
+    background-color: white;
+}
+.cointainer{
+    background-color: crimson;
+}
