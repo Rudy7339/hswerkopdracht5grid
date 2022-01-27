@@ -1,8 +1,107 @@
 /*Maak hier jouw CSS!*/
 /*kleuren toewijzen aan cointainer*/
-body{
-    background-color: white;
-}
-.cointainer{
+
+.container {
     background-color: crimson;
+    color: white;
+    display: grid;
+    padding: 16px;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 190px 100px auto 50px;
+    grid-template-areas:
+    "item-a item-c item-c"
+    "item-b item-c item-c"
+    "item-b item-e item-d"
+    "item-b item-e blanco"
+    "item-f item-f item-f"
+
 }
+
+.item {
+    background-color: black;
+    display: flex;
+    padding: 16px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    ;
+}
+
+
+.item-a {
+    grid-area: item-a;
+}
+
+.item-b {
+    grid-area: item-b;
+}
+
+.item-c {
+    grid-area: item-c;
+}
+
+.item-d {
+    grid-area: item-d;
+}
+
+.item-e {
+    grid-area: item-e;
+}
+
+.item-f {
+    grid-area: item-f;
+}
+
+    @media screen and (max-width: 576px){
+        .container {
+            /*background-color: crimson;*/
+            /*color: white;*/
+            /*display: grid;*/
+            /*padding: 16px;*/
+            /*grid-gap: 16px;*/
+            grid-template-columns: 1fr;
+            grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
+            grid-template-areas:
+    "item-a"
+    "item-b"
+    "item-c"
+    "item-d"
+    "item-e"
+    "blanco"
+    "item-f"
+        }}
+        /*.item {*/
+        /*!*    background-color: black;*!*/
+        /*!*    !*display: flex;*!*!*/
+        /*!*    !*flex-direction: row;*!*!*/
+        /*!*    !*justify-content: center;*!*!*/
+        /*!*    !*align-items: center;*!*!*/
+        /*}*/
+
+
+        /*.item-a {*/
+        /*    grid-area: item-a;*/
+        /*}*/
+
+        /*.item-b {*/
+        /*    grid-area: item-b;*/
+        /*}*/
+
+        /*.item-c {*/
+        /*    grid-area: item-c;*/
+        /*}*/
+
+        /*.item-d {*/
+        /*    height: 50px;*/
+        /*    margin-bottom: 16px;*/
+        /*    !*grid-area: item-d;*!*/
+}
+
+        /*.item-e {        */
+        /*    grid-area: item-e;*/
+        /*}*/
+
+        /*.item-f {*/
+        /*    grid-area: item-f;*/
+        /*}}*/
